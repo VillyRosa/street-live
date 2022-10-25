@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(38,70,170);
+    background: linear-gradient(90deg, rgba(38,70,170,1) 0%, rgba(129,73,208,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 0 10px black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cad {
+    height: 550px;
+}
+
+form h1 {
+    margin: 5px 0;
+    color: #333;
+}
+
+form .inputBox {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+form .inputBox input {
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    outline: none;
+}
+
+form input[type="submit"] {
+    width: 50%;
+    margin: 25px 0;
+    background: rgba(129,73,208,1);
+    box-shadow: 0 0 10px #333;
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: width 0.5s ease-in-out;
+    color: white;
+}
+
+form input[type="submit"]:hover {
+    width: 200px;
+    color: white;
+}
+
+form a {
+    text-decoration: underline;
+    color: rgb(38,70,170);
+    transition: color 0.5s ease-in-out;
+}
+
+form a:hover {
+    color: rgba(129,73,208,1);
+}
+
+.back {
+    position: absolute;
+    width: 40px;
+    margin: -140px 0 0px -140px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.backcad {
+    margin: -240px 0 0px -140px;
+}

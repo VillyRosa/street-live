@@ -33,7 +33,7 @@
 body {
     min-height: 100vh;
     background: rgb(38,70,170);
-    background: linear-gradient(90deg, rgba(38,70,170,1) 0%, rgba(129,73,208,1) 100%);
+    background: linear-gradient(90deg, #2646aa 0%, #8149d0 100%);
 
     display: flex;
     flex-direction: column;
@@ -145,12 +145,12 @@ section .about .info {
     margin: 20px 0;
 }
 
-section .about .info:nth-child(2) p {
+section .about .info:nth-child(3) p {
     order: 1;
     text-align: left;
 }
 
-section .about .info:nth-child(2) img {
+section .about .info:nth-child(3) img {
     order: 2;
 }
 
