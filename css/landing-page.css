@@ -127,16 +127,31 @@ section {
 }
 
 section .about {
-    margin: 20px 0;
     width: 450px;
-    height: 200px;
     padding: 20px;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 0 10px black;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+section .about .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+section .about .info:nth-child(2) p {
+    order: 1;
+    text-align: left;
+}
+
+section .about .info:nth-child(2) img {
+    order: 2;
 }
 
 section .about img {
@@ -150,12 +165,14 @@ section .about p {
 }
 
 section footer {
+    margin-top: 30px;
     width: 100%;
     padding: 20px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .hidden {
@@ -165,5 +182,26 @@ section footer {
 @media only screen and (max-width: 800px) {
     main {
       justify-content: space-around;
+    }
+    section .about {
+        width: 80%;
+        flex-direction: column;
+        text-align: center;
+    }
+    section .about .info {
+        flex-direction: column;
+    }
+    section .about .info img {
+        margin: 20px 0;
+    }
+    section .about .info p {
+        width: 80%;
+        text-align: center;
+    }
+    section .about .info:nth-child(2) img {
+        order: 1;
+    }
+    section .about .info:nth-child(2) p {
+        text-align: center;
     }
 }
