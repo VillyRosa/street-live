@@ -198,10 +198,10 @@ section footer {
         width: 80%;
         text-align: center;
     }
-    section .about .info:nth-child(2) img {
+    section .about .info:nth-child(3) img {
         order: 1;
     }
-    section .about .info:nth-child(2) p {
+    section .about .info:nth-child(3) p {
         text-align: center;
     }
 }
