@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Contas - Login</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+
+    <div class="shadow hidden">
+        <div class="container hidden">
+            <img class="sair" src="images/cross.png" onclick="windowChange()">
+            <div class="logo">
+                <img src="images/icon.png">
+                <p class="p-logo">Street Live</p>
+            </div>
+            <p>Com o premium nós calculamos a melhor rota para você!</p>
+            <select name="" id="">
+                <option selected>💵 Pix</option>
+                <option>💳 Cartão de Crédito</option>
+                <option>🧾 Boleto Bancário</option>
+                <option>😢 Mercado Pago</option>
+            </select>
+            <div class="container-qrcode">
+                <img class="qrcode" src="images/qr-code.png">
+            </div>
+            <div class="value-copy">
+                <p>R$ 9,90 / mês</p>
+                <button onclick="alert('Copiado para a área de transferencia!')">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <ul class="logo">
+            <li><img src="images/icon.png"></li>
+            <li><h1>Street Live</h1></li>
+        </ul>
+        <ul class="actions">
+            <li onclick="windowChange()">
+                <img src="images/give-money.png">
+                <p>Premium</p>
+            </li>
+            <a href="index.html"><li>
+                <img src="images/logout.png">
+                <p>Sair</p>
+            </li></a>  
+        </ul>
+    </nav>
+
+    <main>
+        <img src="images/maps.png" alt="">
+    </main>
+
+    
+    
+    <script src="js/map.js"></script>
+</body>
+</html>
